@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-locationdetectorcomp-dev-234033-authRole",
+      "UnauthRoleArn": "arn:aws:iam::071223775107:role/amplify-locationdetectorcomp-dev-234033-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::071223775107:role/amplify-locationdetectorcomp-dev-234033-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-locationdetectorcomp-dev-234033-deployment",
+      "UnauthRoleName": "amplify-locationdetectorcomp-dev-234033-unauthRole",
+      "StackName": "amplify-locationdetectorcomp-dev-234033",
+      "StackId": "arn:aws:cloudformation:us-east-1:071223775107:stack/amplify-locationdetectorcomp-dev-234033/cbb05ac0-bd5e-11eb-bd10-0ea1c0ab8f7b",
+      "AmplifyAppId": "d30l3v41fzj63h"
+    }
+  }
+}
