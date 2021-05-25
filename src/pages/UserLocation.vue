@@ -7,8 +7,9 @@
 
           <div class="ui message red" v-show="error">{{error}}</div>
           <div class="ui segment">
-            <!-- this has two parts. -->
+            <!-- this has two parts:  -->
             <div class="field">
+              <!-- ui loading map of input, animaition of click -->
               <div class="ui right icon input large" :class="{loading:spinner}">
                 <input
                   type="text"
@@ -44,6 +45,7 @@ export default {
   },
 
   mounted() {
+    // from maps.googleapis.com/maps/api/js in index.html
     var autocomplete = new google.maps.places.Autocomplete(
       this.$refs["autocomplete"],
       {
@@ -64,6 +66,7 @@ export default {
   },
 
   methods: {
+    // This is Geolocation api 
     locatorButtonPressed() {
       this.spinner = true;
 
