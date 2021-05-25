@@ -27,7 +27,8 @@
 
       </div>
     </section>
-
+    <!-- Add map object in UI -->
+    <!-- Add invokers in mounted & functions in methods as well. -->
     <section id="map" ref="map"></section>
   </div>
 </template>
@@ -54,7 +55,7 @@ export default {
         ),
       }
     );
-
+    // Add listener to invoker one function, which is in methods: {}
     autocomplete.addListener("place_changed", () => {
       var place = autocomplete.getPlace();
 
@@ -121,7 +122,7 @@ export default {
           console.log(error.message);
         });
     },
-
+    // Create a map object, and user's location.
     showLocationOnTheMap(latitude, longitude) {
       // Show & center the Map based oon
       var map = new google.maps.Map(this.$refs["map"], {
@@ -129,7 +130,7 @@ export default {
         center: new google.maps.LatLng(latitude, longitude),
         mapTypeId: google.maps.MapTypeId.ROADMAP,
       });
-
+      // Label user's location
       new google.maps.Marker({
         position: new google.maps.LatLng(latitude, longitude),
         map: map,
